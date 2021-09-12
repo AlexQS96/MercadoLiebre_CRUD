@@ -28,7 +28,7 @@ const controller = {
 		let userProfile = users.find(user => user.id === req.session.user.id)
 		let userName = userProfile.name;
 
-		let productPurchased = products.find(productPurchased => productPurchased.id === 1)
+		let productPurchased = products.find(productPurchased => productPurchased.id === 9)
 
 		res.render("users/purchases",{
 			userProfile,

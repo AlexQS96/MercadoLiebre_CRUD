@@ -1,5 +1,5 @@
 .boxPageML2{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
     'op1 op2'
     'op1 op3'
     'op1 op4';
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 40% 60%;
     width: 100%;
     row-gap: 20px;
     padding-bottom: 30px;
@@ -36,12 +36,18 @@
 .purchased1opt{
     grid-area: op1;
     width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin: auto;
 }
 
 .purchased1opt img{
-    height: 100%;
-    width: 100%;
+    max-height: 120px;
+    max-width: 120px;
     object-fit: contain;
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .purchased2opt{
