@@ -1,0 +1,155 @@
+.boxPageML2{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.sectionsPurchases{
+    display: grid;
+    grid-template-areas: 
+    'title1 title1'
+    'op1 op2'
+    'op1 op3'
+    'op1 op4';
+    grid-template-columns: 35% 65%;
+    width: 100%;
+    row-gap: 20px;
+    padding-bottom: 30px;
+    border: 3px solid transparent;
+    background-color: white;
+    font-size: 13px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.titleDatePurchased{
+    grid-area: title1;
+    width: 100%;
+    margin: auto 0;
+    font-weight: bolder;
+    color: rgb(39, 39, 39);
+    text-align: left;
+    font-size: 14px;
+    text-indent: 20px;
+    padding: 10px 0;
+}
+
+.purchased1opt{
+    grid-area: op1;
+    width: 100%;
+}
+
+.purchased1opt img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.purchased2opt{
+    grid-area: op2;
+    width: 100%;
+    font-weight: bold;
+}
+
+.purchased2opt p:nth-child(1){
+    color: rgb(0, 197, 0);
+}
+
+.purchased2opt p:nth-child(3),
+.purchased2opt p:nth-child(4){
+    font-weight: 500;
+    color: grey;
+}
+
+.purchased3opt{
+    grid-area: op3;
+    width: 100%;
+    font-weight: 500;
+    color: grey;
+}
+
+.purchased3opt p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.purchased3opt a{
+    text-align: left;
+    font-weight: bold;
+    color: #0084ff;
+    cursor: pointer;
+}
+
+.purchased4opt{
+    grid-area: op4;
+    width: 100%;
+    text-align: left;
+}
+
+.purchased4opt button{
+    padding: 7px 8px;
+    font-weight: 600;
+    width: 130px;
+    outline: none;
+    border-style: none;
+    margin: 3px 0;
+    border-radius: 0.7rem;
+    background-color: #3483fa;
+    color: white;
+    cursor: pointer;
+}
+
+.btn4opt1 button:hover{
+    background-color: #2968c8;
+    transition: 1s ease;
+}
+
+.btn4opt2 button{
+    background-color: rgba(65,137,230,.15);
+    color:#3483fa;
+}
+
+.btn4opt2 button:hover{
+    background-color: rgba(65,137,230,.2);
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .boxPageML2{
+        width: 90%;
+    }
+
+    .sectionsPurchases{
+        display: grid;
+        grid-template-areas: 
+        'title1 title1 title1'
+        'op1 op2 op4'
+        'op1 op3 op4';
+        grid-template-columns: 20% 55% 25%;
+    }
+
+    .purchased4opt button{
+        padding: 8px 10px;
+        width: 160px;
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width: 991px) {
+
+    .boxPageML2{
+        width: 80%;
+    }
+
+    .sectionsPurchases{
+        grid-template-areas: 
+        'title1 title1 title1 title1'
+        'op1 op2 op3 op4';
+        grid-template-columns: 15% 40% 25% 20%;
+        grid-template-rows: 20% 80%;
+    }
+
+}

@@ -8,7 +8,31 @@
 	<!-- /Header -->
 	
 	<main>
-        
+        <section class="boxPageML2">
+            <div class="titlePageML">Compras</div>
+            <div class="titleOptionML">1 compra</div>
+
+            <section class="sectionsPurchases">
+                <section class="titleDatePurchased shadowML">15 de Septiembre</section>
+                <div class="purchased1opt">
+                    <img src="/images/products/<%= productPurchased.image %>" alt="">
+                </div>
+                <div class="purchased2opt">
+                    <p>Entregado</p>
+                    <p>Llegó el 15 de septiembre</p>
+                    <p>Podés devolverlo hasta el lunes 4 de octubre.</p>
+                    <p><%= productPurchased.name %></p>
+                </div>
+                <div class="purchased3opt">
+                    <p>Mercado Liebre SA</p>
+                    <a>Enviar Mensaje</a>
+                </div>
+                <div class="purchased4opt">
+                    <a href="/products/detail/<%- productPurchased.id %>" class="btn4opt1"><button>Ver Compra</button></a>
+                    <a href="" class="btn4opt2"><button>Volver a Comprar</button></a>
+                </div>
+            </section>
+        </section>
     </main>
 
 	<!-- footer -->

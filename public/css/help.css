@@ -1,15 +1,15 @@
-.titleHelp{
+.titlePageML{
     margin: 20px auto;
     font-size: 28px;
     font-weight: bolder;
 }
 
-.boxOfHelp{
+.boxPageML{
     width: 90%;
     margin: 0 auto;
 }
 
-.titleOptionHelp{
+.titleOptionML{
     text-align: left;
     font-size: 20px;
     font-weight: bolder;
@@ -23,7 +23,7 @@
 
 .sectionsHelp{
     display: grid;
-    grid-template-areas: 'a b c';
+    grid-template-areas: 'opt1 opt2 opt3';
     grid-template-columns: 20% 60% 20%;
     width: 100%;
     border: 3px solid transparent;
@@ -48,7 +48,7 @@
     color: gold;
     margin: auto;
     text-align: center;
-    grid-area: a;
+    grid-area: opt1;
     width: 100%;
     font-size: 23px;
 }
@@ -61,7 +61,7 @@
     font-size: 18px;
     margin: auto;
     text-align: left;
-    grid-area: b;
+    grid-area: opt2;
     width: 100%;
     font-weight: bolder;
 }
@@ -78,7 +78,7 @@
 }
 
 .sectionsHelp i:nth-of-type(even){
-    grid-area: c;
+    grid-area: opt3;
     text-align: center;
     width: 100%;
     margin: auto;
@@ -89,7 +89,7 @@
 
 @media (min-width: 361px) {
 
-    .boxOfHelp{
+    .boxPageML{
         width: 90%;
     }
 
@@ -104,7 +104,7 @@
 
 @media (min-width: 769px) {
 
-    .boxOfHelp{
+    .boxPageML{
         width: 60%;
     }
 

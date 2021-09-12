@@ -1,4 +1,4 @@
-const {users,writeUsersJSON} = require('../data/dataBase');
+const {users,products,writeUsersJSON} = require('../data/dataBase');
 let { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs')
 
@@ -26,12 +26,14 @@ const controller = {
 	},
 	purchases: (req, res) => {
 		let userProfile = users.find(user => user.id === req.session.user.id)
-
 		let userName = userProfile.name;
+
+		let productPurchased = products.find(productPurchased => productPurchased.id === 1)
 
 		res.render("users/purchases",{
 			userProfile,
 			userName,
+			productPurchased,
 			session: req.session
 		})
 	},
