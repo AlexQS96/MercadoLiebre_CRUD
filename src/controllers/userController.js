@@ -132,7 +132,15 @@ const controller = {
 				session: req.session
 			})
 		}
-	}
+	},
+	logout: (req, res) => {
+        req.session.destroy()
+        if(req.cookies.userMercadoLiebre){
+            res.cookie('userMercadoLiebre', '', {maxAge: -1})
+        }
+
+        res.redirect('/')
+    }
 };
 
 module.exports = controller;

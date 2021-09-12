@@ -5,6 +5,7 @@ const {
     profile,
     purchases,
     login,
+    logout,
     register,
     loginProcess,
     registerProcess
@@ -24,6 +25,7 @@ router.get('/profile/purchases',userSessionCheck, purchases);
 
 router.get('/login', userLog, login);
 router.post('/login', loginValidator, loginProcess)
+router.get('/logout', userSessionCheck, logout);
 
 router.get('/register', userLog, register); 
 router.post('/register', uploadUserAvatar.single('avatar'), registerValidator, registerProcess)

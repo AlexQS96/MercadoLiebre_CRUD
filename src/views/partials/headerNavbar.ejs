@@ -39,6 +39,7 @@
 				<% if (typeof session.user != "undefined") { %>
 					<li></li><a href="/profile"><%= userName %> <i class="fa fa-user icon_space" aria-hidden="true"></i></a></li>
 					<li><a href="/profile/purchases">Mis compras <i class="fas fa-shopping-basket icon_space"></i></a></li>
+					<li><a href="/logout">Salir <i class="fa fa-sign-out icon_space" aria-hidden="true"></i></a></li>
 				<% } else { %>
 					<li><a href="/register">Creá tu cuenta <i class="far fa-address-card icon_space"></i></a></li>
 					<li><a href="/login">Ingresá <i class="fas fa-sign-in-alt icon_space"></i></a></li>
