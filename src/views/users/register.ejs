@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('../partials/head', {title: 'Registrate - '}) %>
+<body>
+	<!-- Header -->
+	<%- include('../partials/headerNavbar') %>
+	<!-- /Header -->
+	
+	<main>
+        <form action="/register" method="POST" enctype="multipart/form-data" class="register_Box">
+            <section>
+                <input type="text" name="name" id="nameSurname" placeholder="Nombre y Apellido">
+                <% if (locals.errors && errors.name) { %>
+                    <small><%= errors.name.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <input type="text" name="username" id="username" placeholder="Nombre de Usuari@">
+                <% if (locals.errors && errors.username) { %>
+                    <small><%= errors.username.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <% if (locals.errors && errors.email) { %>
+                    <small><%= errors.email.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <label for="birthDay">Fecha de nacimiento</label>
+                <input type="date" name="birthday" id="birthDay">
+                <% if (locals.errors && errors.birthday) { %>
+                    <small><%= errors.birthday.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <input type="text" name="address" id="adress" placeholder="Domicilio">
+                <% if (locals.errors && errors.address) { %>
+                    <small><%= errors.address.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <label for="userType">Perfil de Usuario</label>
+                <div class="userTypeBox">
+                    <input type="radio" name="rol" id="buyer" value="BUYER" checked>
+                    <p>Comprador</p>
+                    <input type="radio" name="rol" id="seller" value="SELLER">
+                    <p>Vendedor</p>
+                </div>
+            </section>
+            <section>
+                <label for="interests">Intereses</label>
+                <div class="userInterest">
+                    <input type="checkbox" name="interest1" id="electro" value="Electro">
+                    <p>Electro</p>
+                    <input type="checkbox" name="interest2" id="moda" value="Moda">
+                    <p>Moda</p>
+                    <input type="checkbox" name="interest3" id="hogar" value="Hogar">
+                    <p>Hogar</p>
+                    <input type="checkbox" name="interest4" id="juguetes" value="Juguetes">
+                    <p>Jugueteria</p>
+                    <input type="checkbox" name="interest5" id="salud" value="Salud">
+                    <p>Vida Sana</p>
+                </div>
+            </section>
+            <section>
+                <label for="profilePhoto">Foto de Usuario</label>
+                <input type="file" name="avatar" id="profilePhoto">
+            </section>
+            <section>
+                <input type="password" name="pass" id="password" placeholder="Contraseña">
+                <% if (locals.errors && errors.pass) { %>
+                    <small><%= errors.pass.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <input type="password" name="passCheck" id="passwordConfirm" placeholder="Confirmar Contraseña">
+                <% if (locals.errors && errors.passCheck) { %>
+                    <small><%= errors.passCheck.msg %> </small>
+                <% } %>
+            </section>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+
+	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

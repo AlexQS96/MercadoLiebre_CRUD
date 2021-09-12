@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Alexander Mamani",
+        "username": "Alex",
+        "email": "alex@gmail.com",
+        "birthday": "09-07-1996",
+        "address": "Calle Falsa 123",
+        "rol": "BUYER",
+        "interest1": "Electro",
+        "interest2": "",
+        "interest3": "Hogar",
+        "interest4": "",
+        "interest5": "",
+        "avatar": "1631387655660_img_.jpg",
+        "pass": "$2a$12$TkLc/WPr7Cq/4I4Fyb6lxe7QCdevvfbOfsHbA3zTiSqjpAzhdo6nS"
+    }
+]

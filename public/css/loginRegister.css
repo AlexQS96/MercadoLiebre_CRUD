@@ -1,0 +1,143 @@
+/*====== Variables ======*/
+:root {
+    --precios: 18px;
+}
+
+/* Login */
+
+.login_Box {
+    width: 250px;
+    margin: auto auto;
+}
+
+.login_Box section input {
+    outline: none;
+    border-style: none;
+    border-radius: 0.3rem;
+    padding: 10px;
+    margin: 15px auto;
+    width: 100%;
+    font-size: var(--precios);
+}
+
+.login_Box button {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    background-color: var(--Celeste);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+.login_Box button:hover {
+    background-color: #0022AA;
+}
+
+/* Register Section */
+
+.register_Box{
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.register_Box section input{
+    outline: none;
+    border-style: none;
+    border-radius: 0.3rem;
+    padding: 10px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.register_Box section label{
+    display: flex;
+    font-weight: bold;
+    margin: 5px auto;
+}
+.userInterest,
+.userTypeBox{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.userInterest,
+.userTypeBox{
+    margin: 10px auto;
+}
+
+.userTypeBox input[type="radio"]{
+    margin: auto 0;
+    width: 20%;
+}
+
+.userTypeBox p{
+    width: 30%;
+    text-align: start;
+}
+
+.userInterest p{
+    width: 70%;
+    text-align: start;
+    margin: 10px 0;
+}
+
+.userInterest input[type="checkbox"]{
+    margin: auto 0;
+    width: 20%;
+}
+
+.register_Box button{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    background-color: var(--Celeste);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+.register_Box button:hover{
+    background-color: #0022AA;
+}
+
+/* Tablet */
+
+@media (min-width: 361px) {
+
+    .login_Box {
+        width: 350px;
+    }
+
+    .register_Box{
+        width: 50%;
+        font-size: var(--precios);
+    }
+
+    .login_Box,
+    .register_Box input{
+        font-size: var(--precios);
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width: 769px) {
+
+    .register_Box{
+        width: 30%;
+        font-size: var(--precios);
+    }
+
+    .login_Box,
+    .register_Box input{
+        font-size: var(--precios);
+    }
+
+}

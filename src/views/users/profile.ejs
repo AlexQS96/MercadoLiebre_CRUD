@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('../partials/head', {title: 'Perfil - '}) %>
+<body>
+	<!-- Header -->
+	<%- include('../partials/headerNavbar') %>
+	<!-- /Header -->
+	
+	<main>
+        <section class="profileML">
+            <section class="profileBox">
+                <div class="titleProfile">Mis Datos</div>
+                <div class="profilePicture">
+                    <img src="/images/users/<%= userProfile.avatar %>" alt="">
+                    <div class="profileMsg">
+                        <p>Bienvenido</p>
+                        <p><%= userProfile.name %></p>
+                    </div>
+                </div>
+                <section>
+                    <div class="titleProfile secTitle">Datos de Cuenta</div>
+                    <div class="boxBorderML">
+                        <div class="dataBoxProfile shadowML">
+                            <p>Usuario</p>
+                            <p><%= userProfile.username %></p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="dataBoxProfile">
+                            <p>E-mail</p>
+                            <p><%= userProfile.email %></p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="titleProfile secTitle">Datos Personales</div>
+                    <div class="boxBorderML">
+                        <div class="dataBoxProfile shadowML">
+                            <p>Nombre y Apellido</p>
+                            <p><%= userProfile.name %></p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="dataBoxProfile">
+                            <p>Cumpleaños</p>
+                            <p><%= userProfile.birthday %></p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="titleProfile secTitle">Direccion</div>
+                    <div class="boxBorderML">
+                        <div class="dataBoxProfile">
+                            <p>Domicilio</p>
+                            <p><%= userProfile.address %></p>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="titleProfile secTitle">Intereses</div>
+                    <div class="boxBorderML">
+                        <div class="dataBoxProfile shadowML">
+                            <p>Interes n°1</p>
+                            <% if (userProfile.interest1.length > 0) { %>
+                                <p><%= userProfile.interest1 %></p>
+                            <% } else { %>
+                                <p></p>
+                            <% } %>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="dataBoxProfile shadowML">
+                            <p>Interes n°2</p>
+                            <% if (userProfile.interest2.length > 0) { %>
+                                <p><%= userProfile.interest2 %></p>
+                            <% } else { %>
+                                <p></p>
+                            <% } %>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="dataBoxProfile shadowML">
+                            <p>Interes n°3</p>
+                            <% if (userProfile.interest3.length > 0) { %>
+                                <p><%= userProfile.interest3 %></p>
+                            <% } else { %>
+                                <p></p>
+                            <% } %>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="dataBoxProfile shadowML">
+                            <p>Interes n°4</p>
+                            <% if (userProfile.interest4.length > 0) { %>
+                                <p><%= userProfile.interest4 %></p>
+                            <% } else { %>
+                                <p></p>
+                            <% } %>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="dataBoxProfile">
+                            <p>Interes n°5</p>
+                            <% if (userProfile.interest5.length > 0) { %>
+                                <p><%= userProfile.interest5 %></p>
+                            <% } else { %>
+                                <p></p>
+                            <% } %>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('../partials/head', {title: 'Iniciar Sesion - '}) %>
+<body>
+	<!-- Header -->
+	<%- include('../partials/headerNavbar') %>
+	<!-- /Header -->
+	
+	<main>
+        <form action="/login" method="POST" class="login_Box">
+            <section>
+                <input type="text" name="username" id="username" placeholder="Nombre de Usuario">
+                <% if (locals.errors && errors.username) { %>
+                    <small><%= errors.username.msg %> </small>
+                <% } %>
+            </section>
+            <section>
+                <input type="password" name="pass" id="password" placeholder="Elegi tu Contraseña">
+                <% if (locals.errors && errors.pass) { %>
+                    <small><%= errors.pass.msg %> </small>
+                <% } %>
+            </section>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

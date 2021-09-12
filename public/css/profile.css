@@ -1,0 +1,95 @@
+.profileML{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profileBox{
+    width: 100%;
+}
+
+.titleProfile{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.profilePicture{
+    display: flex;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #272727;
+}
+
+.profileMsg{
+    margin: auto 0;
+}
+
+.profileMsg p{
+    padding: 0 30px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profilePicture img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.secTitle{
+    font-size: 18px;
+}
+
+.boxBorderML{
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.shadowML{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.dataBoxProfile{
+    display: grid;
+    grid-template-columns: 37% 58% 5%;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.dataBoxProfile p{
+    margin-left: 10px;
+}
+
+.dataBoxProfile i{
+    margin: auto;
+    color: rgb(22, 169, 228);
+}
+
+/* Tablet */
+
+@media (min-width: 361px) {
+
+
+
+}
+
+/* Desktop */
+
+@media (min-width: 769px) {
+
+    .profileML{
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    .profileBox{
+        grid-column: 2;
+    }
+
+    .dataBoxProfile{
+        grid-template-columns: 40% 55% 5%;
+    }
+}
