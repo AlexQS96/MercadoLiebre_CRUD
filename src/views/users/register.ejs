@@ -10,34 +10,37 @@
 	<main>
         <form action="/register" method="POST" enctype="multipart/form-data" class="register_Box">
             <section>
+                <label>Completá tus datos</label>
+            </section>
+            <section>
                 <input type="text" name="name" id="nameSurname" placeholder="Nombre y Apellido">
                 <% if (locals.errors && errors.name) { %>
-                    <small><%= errors.name.msg %> </small>
+                    <small class="logRegError"><%= errors.name.msg %> </small>
                 <% } %>
             </section>
             <section>
                 <input type="text" name="username" id="username" placeholder="Nombre de Usuari@">
                 <% if (locals.errors && errors.username) { %>
-                    <small><%= errors.username.msg %> </small>
+                    <small class="logRegError"><%= errors.username.msg %> </small>
                 <% } %>
             </section>
             <section>
                 <input type="email" name="email" id="email" placeholder="E-mail">
                 <% if (locals.errors && errors.email) { %>
-                    <small><%= errors.email.msg %> </small>
+                    <small class="logRegError"><%= errors.email.msg %> </small>
                 <% } %>
             </section>
             <section>
                 <label for="birthDay">Fecha de nacimiento</label>
                 <input type="date" name="birthday" id="birthDay">
                 <% if (locals.errors && errors.birthday) { %>
-                    <small><%= errors.birthday.msg %> </small>
+                    <small class="logRegError"><%= errors.birthday.msg %> </small>
                 <% } %>
             </section>
             <section>
                 <input type="text" name="address" id="adress" placeholder="Domicilio">
                 <% if (locals.errors && errors.address) { %>
-                    <small><%= errors.address.msg %> </small>
+                    <small class="logRegError"><%= errors.address.msg %> </small>
                 <% } %>
             </section>
             <section>
@@ -71,13 +74,13 @@
             <section>
                 <input type="password" name="pass" id="password" placeholder="Contraseña">
                 <% if (locals.errors && errors.pass) { %>
-                    <small><%= errors.pass.msg %> </small>
+                    <small class="logRegError"><%= errors.pass.msg %> </small>
                 <% } %>
             </section>
             <section>
                 <input type="password" name="passCheck" id="passwordConfirm" placeholder="Confirmar Contraseña">
                 <% if (locals.errors && errors.passCheck) { %>
-                    <small><%= errors.passCheck.msg %> </small>
+                    <small class="logRegError"><%= errors.passCheck.msg %> </small>
                 <% } %>
             </section>
             <button type="submit">Enviar</button>

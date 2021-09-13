@@ -55,7 +55,7 @@
 .register_Box section label{
     display: flex;
     font-weight: bold;
-    margin: 5px auto;
+    margin: 15px auto;
 }
 .userInterest,
 .userTypeBox{
@@ -90,6 +90,10 @@
     width: 20%;
 }
 
+#profilePhoto{
+    padding: 15px 0;
+}
+
 .register_Box button{
     display: flex;
     margin: 10px auto;
@@ -104,6 +108,10 @@
 
 .register_Box button:hover{
     background-color: #0022AA;
+}
+
+.logRegError{
+    color: red;
 }
 
 /* Tablet */
