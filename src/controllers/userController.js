@@ -115,7 +115,7 @@ const controller = {
 				interest3 : interest3 ? interest3 : "",
 				interest4 : interest4 ? interest4 : "",
 				interest5 : interest5 ? interest5 : "",
-				avatar: req.file ? req.file.filename : "user-default.jpg",
+				avatar: req.file ? req.file.filename : "user-default.png",
 				pass: bcrypt.hashSync(pass, 12)
 			}
 
