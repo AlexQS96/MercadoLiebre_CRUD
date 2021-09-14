@@ -12,13 +12,13 @@
             <section>
                 <input type="text" name="username" id="username" placeholder="Nombre de Usuario">
                 <% if (locals.errors && errors.username) { %>
-                    <small><%= errors.username.msg %> </small>
+                    <small class="logRegError"><%= errors.username.msg %> </small>
                 <% } %>
             </section>
             <section>
                 <input type="password" name="pass" id="password" placeholder="Elegi tu Contraseña">
                 <% if (locals.errors && errors.pass) { %>
-                    <small><%= errors.pass.msg %> </small>
+                    <small class="logRegError"><%= errors.pass.msg %> </small>
                 <% } %>
             </section>
             <button type="submit">Enviar</button>
